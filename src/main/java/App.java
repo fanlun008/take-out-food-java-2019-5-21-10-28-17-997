@@ -2,6 +2,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -20,7 +21,7 @@ public class App {
 
     public String bestCharge(List<String> inputs) {
         //TODO: write code here
-        Map<Item, Integer> order = new HashMap<>();
+        Map<Item, Integer> order = new LinkedHashMap<>();
 
         inputs.forEach((input) -> {
             String[] item_count_str = input.split("x");
