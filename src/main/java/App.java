@@ -113,9 +113,9 @@ public class App {
                     e.printStackTrace();
                 }
             }
-            best_promap.put("bestSave", finalSave);
-            best_promap.put("totalPrice", totalPrice);
-            best_promap.put("bestPromotion", bestPromotion);
+            best_promap.put("bestSave", finalSave);  //最终节省的钱数
+            best_promap.put("totalPrice", totalPrice);  //减去优惠后的总钱数
+            best_promap.put("bestPromotion", bestPromotion);  //最佳优惠方案实例
             return best_promap;
         } else {
             best_promap.clear();
